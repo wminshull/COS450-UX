@@ -1,6 +1,16 @@
 /*
         The L-Space Default Stylesheet.
-*/
+
+        COLOR PALETTE FOR PROJECT: */
+:root {
+        --BLACK: #0a090c
+        --LIGHTGRAY: #eaeaeb
+        --WHITE: #ffffff
+        --LIGHTBLUE: #7ea3cc
+        --BLUE: #244c99
+        --RED: #973e49
+}
+
 
 body {
         background: #efefde url("/images/LightTerryGray.jpg");
