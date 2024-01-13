@@ -3,29 +3,25 @@
 
         COLOR PALETTE FOR PROJECT: */
 :root {
-        --BLACK: #0a090c
-        --LIGHTGRAY: #eaeaeb
-        --WHITE: #ffffff
-        --LIGHTBLUE: #7ea3cc
-        --BLUE: #244c99
-        --RED: #973e49
+        --BLACK: #0a090c;
+        --LIGHTGRAY: #eaeaeb;
+        --WHITE: #ffffff;
+        --LIGHTBLUE: #7ea3cc;
+        --BLUE: #244c99;
+        --RED: #973e49;
 }
 
 /*
         REFERENCE ABOVE COLORS LIKE THIS:
-        
+
         .exampleclass{
                 examplestyle: var(--BLACK);
         }
 */
 
 body {
-        background: #efefde url("/images/LightTerryGray.jpg");
-        color: black;
-        padding-left: 5%;
-        padding-right: 5%;
-        padding-top: 1%;
-        padding-bottom: 1%;
+        background: var(--WHITE);
+        color: var(--BLACK);
         font-family: "DejaVu Serif", georgia, serif;
 }
 
@@ -45,15 +41,14 @@ a:active,a:focus {
 h1 {
         font-size: 200%;
 }
+h2 {
+        margin: 4px;
+}
 h1,h2,h3,h4,h5,h6 {
         color: #000095;
 }
 h4,h5 {
 	margin-bottom:0;
-}
-
-.center {
-        text-align: center;
 }
 
 .right  { 
@@ -167,14 +162,43 @@ table{
 	margin: 0 auto;
 	text-align: left;
 }
-.lspacebox{
+.lspacesiteid{
 	margin:0 auto;
-	text-align:center;
+	text-align:left;
 	border:none;
+        left: 0%;
+        top: 0%;
+        min-width: 20%;
 }
-input{
-  font-family: monospace;
-  font-size: 80%;
+
+.siteid-flex-container{
+        min-width: 100%;
+        min-height: 55px;
+        display: flex;
+
+}
+
+.navbar-flex-container{
+        min-width: 100%;
+        min-height: 55px;
+        display: flex;
+}
+
+.navh1{
+        display: flex;
+        align-items: center;
+        justify-items: center;
+        size: 16pt;
+        margin-top: 4px;
+        margin-bottom: 4px;
+        margin-left: 5px;
+        margin-right: 5px;
+        flex-basis: 12.5%;
+        border-style: solid;
+        border-width: 2px;
+        height: 45px;
+        border-radius: 5px;
+        border-color: var(--LIGHTBLUE);
 }
 .newsflash {
 	text-align:center;
