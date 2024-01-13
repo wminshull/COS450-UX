@@ -1,0 +1,127 @@
+:link    {color: #3333DD; background-color:transparent}
+:visited {color: #555555; background-color:transparent}
+
+
+
+body {
+	background: #EFEFDE url("/images/LightTerry.jpg");
+	color: black;
+	padding-left: 5%;
+	padding-right: 5%;
+	padding-top: 1%;
+	padding-bottom: 1%;
+	max-width: 50em;
+	margin-left: auto;
+	margin-right: auto;
+        font-family: serif;
+}
+
+.red { color: #880000; 	background: transparent; }
+
+.center { text-align: center; }
+
+
+.lbs-title {
+	text-align: center;
+}
+
+.lbs-topnav {
+	vertical-align: text-bottom;
+}
+
+.lbs-topnav-text {
+	float: left;
+}
+
+.lbs-topnav-but {
+	float: right;
+}
+
+h1 { color: #000095; background: transparent; font-size: 200%; }
+
+
+.float-left  {
+	margin: 5px 10px 10px 10px;
+	float: left;
+	color: #EFEFDF;
+	background: inherit;
+	border:0;
+}
+
+.float-right {
+	margin: 5px 10px 10px 10px;
+	float: right;
+	color: #EFEFDF;
+	background: inherit;
+	border:0;
+}
+
+.nav {
+	color: #EFEFDF;
+	background: inherit;
+	border:0;
+}
+
+hr { clear: both; }
+
+.quote {
+	padding-left: 15%;
+	padding-right: 15%;
+}
+
+.quote-body {
+	color: black;
+	background: transparent;
+}
+
+.quote-sep {
+	width: 40%;
+}
+
+.version-history {
+	list-style: disc;
+}
+
+
+.lbs-toolbar {
+	text-align: center;
+}
+
+.lbs-local-credits {
+
+	font-size: 80%;
+	text-align: center;
+}
+
+.lbs-global-credits {
+	font-size: 80%;
+	text-align: center;
+}
+
+.page-tag {
+	color: #440000;
+	background: transparent;
+}
+
+.terryquote {
+
+	color: #880000;
+	background: transparent;
+	padding-left: 10%;
+	padding-right: 10%;
+}
+
+.annoquote {
+/*	color: #000095; */
+	color: #000055;
+	background: transparent;
+	padding-top: 2ex;
+}
+
+.deathquote {
+	font-size: 80%;
+}
+
+blockquote.stanza {
+	font-style: italic;
+}
