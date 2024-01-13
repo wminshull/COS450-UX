@@ -11,6 +11,14 @@
         --RED: #973e49
 }
 
+/*
+        REFERENCE ABOVE COLORS LIKE THIS:
+        
+        .exampleclass{
+                examplestyle: var(--BLACK);
+        }
+*/
+
 body {
         background: #efefde url("/images/LightTerryGray.jpg");
         color: black;
