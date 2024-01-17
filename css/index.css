@@ -11,6 +11,11 @@
         --RED: #973e49;
 }
 
+@font-face {
+        font-family: 'Dune Rise';
+        src: url('Dune_Rise.ttf');
+}
+
 /*
         REFERENCE ABOVE COLORS LIKE THIS:
 
@@ -42,11 +47,13 @@ h1 {
         font-size: 200%;
 }
 h2 {
+        height: 40px;
+        font-size: 5vh;
         margin: 4px;
+        font-family: 'Dune Rise';
+        color: var(--BLUE);
 }
-h1,h2,h3,h4,h5,h6 {
-        color: #000095;
-}
+
 h4,h5 {
 	margin-bottom:0;
 }
@@ -165,7 +172,6 @@ table{
 .lspacesiteid{
 	margin:0 auto;
 	text-align:left;
-	border:none;
         left: 0%;
         top: 0%;
         min-width: 20%;
@@ -178,12 +184,39 @@ table{
 
 }
 
+.searchBtn{
+        min-height: 30px;
+        background-color: var(--LIGHTBLUE);
+        color: var(--WHITE);
+        border: 2px solid var(--LIGHTBLUE);
+        border-radius: 15px;
+        transition: 0.5s;
+
+}
+
+.searchBtn:hover{
+        background-color: var(--BLUE);
+}
+
+.searchBar{
+        height: 24px;
+        border-radius: 15px;
+        border: 2px solid var(--LIGHTBLUE);
+        transition: 0.5s;
+}
+
+.searchBar:hover{
+        background-color: lightgray;
+}
 
 .navbar-flex-container{
         min-width: 100%;
-        min-height: 55px;
+        min-height: 50px;
+        max-height: 55px;
         margin: 0px;
+        column-gap: 5px;
         display: flex;
+        align-content: right;
 }
 
 .navh1{
@@ -191,6 +224,7 @@ table{
         justify-content: center;
         flex-wrap: wrap;
         align-content: center;
+        text-align: center;
         size: 16pt;
         margin-top: 0;
         margin-bottom: 0px;
@@ -199,12 +233,26 @@ table{
         flex-basis: 12.5%;
         border-style: solid;
         border-width: 2px;
+        border-radius: 5px;
         height: 45px;
         border-color: var(--LIGHTBLUE);
+        transition: 0.5s;
 }
+
+.navh1:hover{
+        border-top-right-radius: 15px;
+        border-top-left-radius: 15px;
+        border-bottom-right-radius: 1px;
+        border-bottom-left-radius: 1px;
+        border-bottom-color: var(--BLUE);
+        background-color: var(--BLUE);
+        color: var(--WHITE);
+}
+
 .newsflash {
 	text-align:center;
-	margin:12px 0;
+	margin-top: 0px;
+        background-color: var(--BLUE);
 }
 .newsflash h3 {
 	color: #000095;
