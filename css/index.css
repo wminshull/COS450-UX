@@ -258,13 +258,11 @@ table{
 .honoringTerryPratchett {
         display: flex;
         margin: 10px;
-        transition: margin 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        transition: box-shadow 0.3s ease-in-out;
         text-decoration: none;
 }
 
 .honoringTerryPratchett:hover {
-        margin-top: 7px;
-        margin-top: 13px;
         box-shadow: 3px 3px 10px 10px gray;
 }
 
@@ -327,8 +325,9 @@ table{
         margin: 10px;
         width: 32%;
         height: 200px;
-        background-color: var(--LIGHTBLUE);
-        transition: margin 0.3s ease-in-out, box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out;
+        background-color: var(--WHITE);
+        border: var(--LIGHTBLUE) 3px solid;
+        transition: margin 0.3s ease-in-out, box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out, border-radius 0.3s ease-in-out;
         border-radius: 5px;
 
         font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -339,6 +338,7 @@ table{
         box-shadow: 3px 3px 10px 10px gray;
         margin-top: 7px;
         background-color: var(--BLUE);
+        border-radius: 10px;
 }
 
 .externalLink > h1, .externalLink > h4 {
