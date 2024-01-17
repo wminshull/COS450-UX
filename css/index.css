@@ -252,57 +252,106 @@ table{
 
 
 .newsflashContainer {
-        display: grid;
         gap: 20px;
-        padding: 20px;
-        border: gray 3px solid;
 }
 
 .honoringTerryPratchett {
-        grid-row: 1 / span 1;
-        grid-column: 1 / span 3;
-        border: gray 3px solid;
+        display: flex;
+        margin: 10px;
+        transition: margin 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        text-decoration: none;
 }
 
-#terryPratchett {
+.honoringTerryPratchett:hover {
+        margin-top: 7px;
+        margin-top: 13px;
+        box-shadow: 3px 3px 10px 10px gray;
+}
+
+#terryPratchettImg {
+        box-shadow: inset -10px 0px 20px 0px black;
         height: 300px;
+        width: 450px;
+        border-radius: 5px 0 0 5px;
 }
 
-.UKDiscWorldConvention {
-        grid-row: 2 / span 1;
-        grid-column: 1 / span 1;
-        border: gray 3px solid;
-
+#terryPratchettImg > img {
+        height: 300px;
+        position: relative;
+        z-index: -2;
+        border-radius: 5px 0 0 5px;
 }
 
-.adelaide {
-        grid-row: 2 / span 1;
-        grid-column: 2 / span 1;
-        border: gray 3px solid;
-
+#terryPratchettText {
+        height: 300px;
+        width: 100%;
+        background-color: black;
+        display: flex;
+        justify-content: left;
+        align-items: center; 
+        border-radius: 0 5px 5px 0;
 }
 
-.readingGuide {
-        grid-row: 2 / span 1;
-        grid-column: 3 / span 1;
-        border: gray 3px solid;
-
+#terryPratchettText > div > h1, #terryPratchettText > div > h3 {
+        color: white;
+        font-family: 'Kaushan Script', cursive;
 }
 
-.newsflash {
-	text-align:center;
-	margin-top: 0px;
+#terryPratchettText > div > h4 {
+        color: white;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#terryPratchettText > div > h1 {
+        margin-top: -20px;
+        font-size: 5em;
+}
+
+.latestNewsHeader {
+        color: var(--BLACK);
+        margin: 10px;
+        padding-left: 10px;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.externalLinks {
+        display: flex;
+        justify-content: space-evenly;
+}
+
+.externalLink {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 10px;
+        width: 32%;
+        height: 200px;
+        background-color: var(--LIGHTBLUE);
+        transition: margin 0.3s ease-in-out, box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out;
+        border-radius: 5px;
+
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        text-decoration: none;
+}
+
+.externalLink:hover {
+        box-shadow: 3px 3px 10px 10px gray;
+        margin-top: 7px;
         background-color: var(--BLUE);
 }
-.newsflash h3 {
-	color: #000095;
-	display:inline;
-	font-size:1em;
-	font-weight:normal;
+
+.externalLink > h1, .externalLink > h4 {
+        color: var(--BLACK);
 }
-.newsflash li {
-	list-style:none;
-	margin-bottom:5px;
+
+.externalLink > h4 {
+        position: relative;
+        bottom: 10px;
+}
+
+.externalLink:active {
+        background-color: var(--LIGHTBLUE);
 }
 
 .foo {
